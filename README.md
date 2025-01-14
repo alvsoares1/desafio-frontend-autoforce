@@ -4,13 +4,18 @@
 
 Execute os comandos em terminais separados:
 
-1. **Inicie a aplicação:**
+1. **Instale as dependências:¨**
+    ```bash
+    npm install
+    ```
+
+2. **Inicie a aplicação:**
 
     ```bash
     npm start
     ```
 
-2. **Inicie a FakeAPI:**
+3. **Inicie a FakeAPI:**
 
     ```bash
     npx json-server db.json --port 3001
@@ -42,19 +47,19 @@ O componente Header é responsável por exibir a logo da concessionária, a logo
 Estes componentes são responsáveis por exibir as informações do veículo. Separei as informações 2 componentes por questões de organização.
 
 - *Dados do Veículo*: Para realizar as requisições HTTP e obter os dados do veículo da API, optei por utilizar a biblioteca Axios. Segue um exemplo de como foi feito isso:
-```javascript
-const [vehicles, setVehicles] = useState([]);
-const [loading, setLoading] = useState(true);
-useEffect(() => {
-  axios
-    .get("http://localhost:3001/vehicle")
-    .then((response) => {
-      setVehicles(response.data);
-      setLoading(false);
-    })
-    .catch((error) => console.error("Erro ao carregar veículos:", error));
-}, []);
-```
+    ```javascript
+    const [vehicles, setVehicles] = useState([]);
+    const [loading, setLoading] = useState(true);
+    useEffect(() => {
+    axios
+        .get("http://localhost:3001/vehicle")
+        .then((response) => {
+        setVehicles(response.data);
+        setLoading(false);
+        })
+        .catch((error) => console.error("Erro ao carregar veículos:", error));
+    }, []);
+    ```
 - *Vídeo*: Foi necessário adicionar uma função para converter o vídeo do veículo para o formato correto, pois a URL recebida não estava de acordo com os padrões do design.
 
 - *Tenho Interesse*: Ao clicar no botão "Tenho Interesse" irá abrir um modal onde terá os campos de Nome, Email e Telefone.
