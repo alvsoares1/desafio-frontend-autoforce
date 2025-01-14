@@ -4,7 +4,7 @@
 
 Execute os comandos em terminais separados:
 
-1. **Instale as dependências:¨**
+1. **Instale as dependências:**
     ```bash
     npm install
     ```
