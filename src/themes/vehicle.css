@@ -1,0 +1,220 @@
+.background-wrapper {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+.container {
+  max-width: 1111px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-family: "Open Sans", sans-serif;
+}
+
+.body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.body-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #e1e1e1 1px solid;
+}
+
+.title-about {
+  width: 540px;
+  height: 240px;
+  font-size: 32px;
+  color: black;
+  overflow: hidden;
+}
+
+.subtitle-about {
+  width: 540px;
+  height: 244px;
+  font-size: 16px;
+  color: black;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.video-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vehicle-video-title {
+  align-self: flex-start;
+  font-size: 24px;
+}
+
+.vehicle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.veichle-video iframe {
+  width: 1108px;
+  height: 623px;
+  margin: 0 auto;
+  display: block;
+}
+
+.vehicle-legal_text {
+  font-size: 14px;
+  line-height: 1.6;
+  text-align: justify;
+  margin-bottom: 15px;
+  border-top: 1px solid #e1e1e1;
+  color: black;
+}
+
+.breadcrumb-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: #666666;
+  margin: 0;
+}
+
+.breadcrumb a {
+  color: #666666;
+  text-decoration: none;
+}
+
+.breadcrumb a:hover {
+  text-decoration: underline;
+}
+
+.back-link {
+  color: #666666;
+  margin: 0;
+}
+
+.back-link-anchor {
+  color: inherit;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.back-link-anchor:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%;
+    padding: 0 15px;
+  }
+
+  .about {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .title-about {
+    width: 100%;
+    height: auto;
+    font-size: 28px;
+  }
+
+  .subtitle-about {
+    width: 100%;
+    height: auto;
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .video-about {
+    padding: 10px 0;
+  }
+
+  .vehicle-video-title {
+    font-size: 20px;
+  }
+
+  .veichle-video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .vehicle-legal_text {
+    font-size: 12px;
+    padding-top: 10px;
+  }
+
+  .breadcrumb-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .breadcrumb,
+  .back-link {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    max-width: 95%;
+    padding: 0 10px;
+  }
+
+  .title-about {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .subtitle-about {
+    font-size: 12px;
+    text-align: justify;
+  }
+
+  .breadcrumb,
+  .back-link {
+    font-size: 10px;
+  }
+
+  .vehicle-video-title {
+    font-size: 18px;
+  }
+
+  .veichle-video iframe {
+    width: 100%;
+    height: auto;
+  }
+
+  .vehicle-legal_text {
+    font-size: 10px;
+  }
+}

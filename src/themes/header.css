@@ -1,0 +1,126 @@
+.header-wrapper {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px; 
+}
+
+.dealer-logo {
+  width: 150px;
+  height: auto;
+}
+
+.separator {
+  width: 2px;
+  height: 30px;
+  background-color: #000000;
+}
+
+.bmw-logo {
+  width: 40px;
+  height: auto;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.call-button,
+.whatsapp-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 14px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.call-button {
+  background-color: #0555aa;
+}
+
+.call-button:hover {
+  background-color: #0056b3;
+}
+
+.whatsapp-button {
+  background-color: #25d366;
+}
+
+.whatsapp-button:hover {
+  background-color: #1c9e54;
+}
+
+
+@media (max-width: 768px) {
+  .header {
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 20px; 
+  }
+
+  .header-left,
+  .header-right {
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .dealer-logo {
+    width: 120px;
+  }
+
+  .bmw-logo {
+    width: 35px;
+  }
+
+  .call-button,
+  .whatsapp-button {
+    padding: 8px 15px; 
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .dealer-logo {
+    width: 100px;
+  }
+
+  .bmw-logo {
+    width: 30px;
+  }
+
+  .call-button,
+  .whatsapp-button {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}

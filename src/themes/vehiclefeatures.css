@@ -1,0 +1,183 @@
+.vehicle-subtitle {
+    font-size: 24px;
+    color: #666666;
+  }
+  
+  .vehicle-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center; 
+  }
+  
+  .vehicle-card {
+    width: 100vw;
+    background: white;
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    padding: 20px 0;
+    position: relative;
+  }
+  
+  .vehicle-card-features {
+    max-width: 1111px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .vehicle-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 1111px;
+    height: 3px;
+    background: black;
+    transform: translateX(-50%);
+  }
+  
+  .vehicle-name {
+    padding-left: 10px;
+    border-left: #e5e5e5 4px solid;
+    font-size: 32px;
+    text-align: center; 
+  }
+  
+  .vehicle-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .vehicle-image {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .vehicle-features {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .features-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  
+  .features {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 calc(50% - 20px);
+  }
+  
+  .consumo-icon {
+    width: 21.79px;
+    height: 24px;
+  }
+  
+  .cilindrada-icon {
+    width: 38.01px;
+    height: 24px;
+  }
+  
+  .potencia-icon {
+    width: 17.05px;
+    height: 24px;
+  }
+  
+  .velocidade-icon {
+    width: 29.32px;
+    height: 24px;
+  }
+  
+  .features-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+  }
+  
+  .features-text strong {
+    font-weight: bold;
+  }
+  
+  .features-text span {
+    color: #3754e2;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .vehicle-button {
+    width: 200px;
+    height: 40px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #3754e2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .vehicle-button:hover {
+    background-color: #003f87;
+  }
+  
+  @media (max-width: 768px) {
+    .vehicle-card {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .vehicle-card::after {
+      width: 90%; 
+    }
+  
+    .vehicle-content {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    .vehicle-image {
+      width: 100%; 
+      margin-bottom: 20px;
+    }
+  
+    .vehicle-name {
+      font-size: 24px; 
+    }
+  
+    .features-title {
+      font-size: 20px;
+      text-align: center;
+    }
+  
+    .features-grid {
+      gap: 10px; 
+    }
+  
+    .features {
+      flex: 1 1 100%; 
+      justify-content: center; 
+    }
+  
+    .vehicle-button {
+      width: 100%; 
+      max-width: 300px; 
+    }
+  }
+  
